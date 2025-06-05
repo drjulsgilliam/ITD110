@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Repair Services</title>
+  <style>
+    :root {
+      --primary-bg: #f8f8f8;
+      --accent-color: #2c3e50;
+      --secondary-color: #3498db;
+      --text-color: #555;
+      --heading-color: #333;
+      --light-bg: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: var(--primary-bg);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header/Hero */
+    header {
+      background: var(--accent-color);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    /* Services Section */
+    .services {
+      width: 100%;
+      max-width: 1200px;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 0 1rem;
+      flex: 1;
+    }
+
+    .service-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .service-row-img {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .service-row-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+
+    .service-row-text {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .service-row-text h2 {
+      font-size: 30px;
+      margin-bottom: 0.5rem;
+      color: var(--accent-color);
+    }
+
+    .service-row-text p {
+      line-height: 20px;
+      margin-bottom: 1rem;
+    }
+
+    /* Alternate row layout using nth-child */
+    .service-row:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--accent-color);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .service-row {
+        flex-direction: column !important;
+      }
+      .service-row:nth-child(even) {
+        flex-direction: column !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Home Repair Services</h1>
+    <p>Reliable, efficient solutions for all your household needs.</p>
+  </header>
+
+  <section class="services">
+    <!-- Plumbing -->
+    <div class="service-row">
+      <div class="service-row-img">
+        <img src="images/Firefly create service picture of plumbing 26654.jpg" alt="Plumbing Image" />
+      </div>
+      <div class="service-row-text">
+        <h2>Plumbing</h2>
+        <p>From fixing leaks and clogs to installing new fixtures, our expert plumbers ensure your home’s plumbing runs smoothly.</p>
+        <p>We handle everything from minor repairs to full renovations, delivering quality workmanship every time.</p>
+      </div>
+    </div>
+
+    <!-- Electrical -->
+    <div class="service-row">
+      <div class="service-row-img">
+        <img src="images/Firefly create service picture of electrical 26654.jpg" alt="Electrical Image" />
+      </div>
+      <div class="service-row-text">
+        <h2>Electrical</h2>
+        <p>Our certified electricians tackle wiring, lighting, and general electrical troubleshooting to keep your home safe and powered.</p>
+        <p>Whether it’s a small repair or a complete rewiring, we prioritize safety, efficiency, and durability.</p>
+      </div>
+    </div>
+
+    <!-- Carpentry -->
+    <div class="service-row">
+      <div class="service-row-img">
+        <img src="images/Firefly create service picture of roofing 18550.jpg" alt="Carpentry Image" />
+      </div>
+      <div class="service-row-text">
+        <h2>Carpentry</h2>
+        <p>Custom cabinetry, shelving, and framing services for both structural and aesthetic improvements in your home.</p>
+        <p>We work with quality materials to ensure beautiful, long-lasting results that match your style.</p>
+      </div>
+    </div>
+
+    <!-- Painting -->
+    <div class="service-row">
+      <div class="service-row-img">
+        <img src="images/Firefly create service picture of roofing 18550.jpg" alt="Painting Image" />
+      </div>
+      <div class="service-row-text">
+        <h2>Painting</h2>
+        <p>Interior and exterior painting solutions that breathe new life into your living spaces and protect surfaces from wear.</p>
+        <p>We offer color consultations and use premium paints to guarantee a polished, lasting finish.</p>
+      </div>
+    </div>
+
+    <!-- Flooring -->
+    <div class="service-row">
+      <div class="service-row-img">
+        <img src="images/Firefly create service picture of flooring 18550.jpg" alt="Flooring Image" />
+      </div>
+      <div class="service-row-text">
+        <h2>Flooring</h2>
+        <p>Expert installation, repair, and refinishing of hardwood, laminate, tile, and more.</p>
+        <p>We ensure durability, style, and comfort underfoot with solutions tailored to your budget and needs.</p>
+      </div>
+    </div>
+
+    <!-- Roofing -->
+    <div class="service-row">
+      <div class="service-row-img">
+        <img src="images/Firefly create service picture of roofing 18550.jpg" alt="Roofing Image" />
+      </div>
+      <div class="service-row-text">
+        <h2>Roofing</h2>
+        <p>From small leaks to full roof replacements, our experienced team provides high-quality roof repair and maintenance.</p>
+        <p>Safeguard your home from the elements with reliable, long-lasting roofing solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Home Fix Pros. All rights reserved.</p>
+  </footer>
+</body>
+</html>

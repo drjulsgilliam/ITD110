@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baking Services (Fully Responsive)</title>
+  <style>
+    :root {
+      --bg-color: #f2f2f2;
+      --text-color: #555;
+      --primary-color: #824f2d;
+      --accent-color: #d35400;
+      --card-bg: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      max-width: 600px;
+      margin: 0.5rem auto 0;
+      line-height: 1.5;
+      font-size: 1.1rem;
+    }
+
+    /* SERVICES GRID */
+    .services {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+
+      /* Default: 3 columns on wide screens */
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Break down to 2 columns at 900px */
+    @media (max-width: 900px) {
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Single column at 600px and below */
+    @media (max-width: 600px) {
+      .services {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* SERVICE CARD */
+    .service-card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .service-content {
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .service-content h2 {
+      font-size: 1.4rem;
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+    }
+    .service-content p {
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: auto;
+    }
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Baking Services</h1>
+    <p>Delicious treats and personalized confections for every occasion.</p>
+  </header>
+
+  <!-- SERVICES GRID -->
+  <section class="services">
+
+    <!-- Card 1 -->
+    <div class="service-card">
+      <img
+        src="images/Firefly create custom cake 20148.jpg"
+        alt="Custom Cakes"
+        class="service-img"
+      />
+      <div class="service-content">
+        <h2>Custom Cakes</h2>
+        <p>Beautifully decorated cakes for birthdays, weddings, and special events.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="service-card">
+      <img
+        src="images/Firefly create cookies 20148.jpg"
+        alt="Artisan Breads"
+        class="service-img"
+      />
+      <div class="service-content">
+        <h2>Artisan Breads</h2>
+        <p>Freshly baked sourdough, ciabatta, and more, all made from scratch daily.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="service-card">
+      <img
+        src="images/Firefly create custom cake 20148.jpg"
+        alt="Cookies and Pastries"
+        class="service-img"
+      />
+      <div class="service-content">
+        <h2>Cookies & Pastries</h2>
+        <p>Indulge in melt-in-your-mouth cookies, flaky croissants, and sweet pastries.</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="service-card">
+      <img
+        src="images/Firefly create custom cake 20148.jpg"
+        alt="Cupcakes"
+        class="service-img"
+      />
+      <div class="service-content">
+        <h2>Cupcakes & Muffins</h2>
+        <p>Frosted cupcakes and hearty muffins in a variety of flavors and designs.</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="service-card">
+      <img
+        src="images/Firefly create custom cake 20148.jpg"
+        alt="Baking Classes"
+        class="service-img"
+      />
+      <div class="service-content">
+        <h2>Baking Classes</h2>
+        <p>Hands-on workshops for everything from basic decorating to advanced techniques.</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="service-card">
+      <img
+        src="images/Firefly create custom cake 20148.jpg"
+        alt="Special Diets"
+        class="service-img"
+      />
+      <div class="service-content">
+        <h2>Special Diets</h2>
+        <p>Gluten-free, vegan, and sugar-free options for health-conscious customers.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Sugar & Spice Bakery. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

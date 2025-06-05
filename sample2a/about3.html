@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Modular Layout with Scroll & Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --warm1: #ffedd5;
+      --warm2: #fdba74;
+      --warm3: #fb923c;
+      --warm4: #ea580c;
+      --text-dark: #3b2f2f;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--warm1);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--warm3);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: var(--warm4);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .modular-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+
+    .module {
+      background-color: white;
+      padding: 2rem;
+      border-left: 6px solid var(--warm4);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .module:hover {
+      transform: translateY(-5px);
+    }
+
+    .module h2 {
+      font-size: 1.5rem;
+      color: var(--warm4);
+      margin-bottom: 1rem;
+    }
+
+    .module i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--warm3);
+    }
+
+    .gallery {
+      padding: 4rem 2rem;
+      background-color: #fff7ed;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--warm4);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: var(--warm4);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+    <p>Exploring my path with passion and purpose</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="modular-container">
+    <div class="module">
+      <i class="fas fa-graduation-cap"></i>
+      <h2>Education</h2>
+      <p>Graduated with a degree in Computer Science in 2015. Passionate about continuous learning and research in design and development.</p>
+    </div>
+    <div class="module">
+      <i class="fas fa-code"></i>
+      <h2>Development</h2>
+      <p>Started my journey in web development in 2016, building modern and responsive websites for small businesses and startups.</p>
+    </div>
+    <div class="module">
+      <i class="fas fa-users"></i>
+      <h2>Teamwork</h2>
+      <p>Enjoy working in agile teams and collaborating with designers and developers to bring ideas to life.</p>
+    </div>
+    <div class="module">
+      <i class="fas fa-microphone"></i>
+      <h2>Speaking</h2>
+      <p>Presented at multiple tech conferences and gave a TEDx talk on inclusive design and accessibility in tech.</p>
+    </div>
+    <div class="module">
+      <i class="fas fa-chalkboard-teacher"></i>
+      <h2>Teaching</h2>
+      <p>Currently teaching web and multimedia design, mentoring students, and supporting innovation in education.</p>
+    </div>
+    <div class="module">
+      <i class="fas fa-heart"></i>
+      <h2>Values</h2>
+      <p>Driven by empathy, creativity, and a passion to empower others through technology and design.</p>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/Firefly create an image of ai and is modern and innovative create from scratch effect; technology ba-2.jpg" alt="Work Sample 1">
+      <img src="images/Firefly create an image of ai and is modern and innovative create from scratch effect; technology ba.jpg" alt="Work Sample 2">
+      <img src="images/Firefly create an image of instructional design and is modern and innovative web pages learning mate.jpg" alt="Work Sample 3">
+      <img src="images/Firefly create an image of website and is modern and innovative create from scratch effect; technolo-2.jpg" alt="Work Sample 4">
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 Your Name. Crafted with care and creativity.</p>
+  </footer>
+</body>
+</html>
